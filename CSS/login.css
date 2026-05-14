@@ -1,0 +1,152 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: white;
+}
+.nav{
+    background-color: white;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid rgb(223, 223, 223);
+}
+.nav1{
+    margin-left: 100px;
+}
+.NovaCart{
+    margin-right: 30px;
+    text-decoration: none;
+    color: black;
+    font-size: 17px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.Shop{
+    font-size: 13px;
+    color: gray;
+    text-decoration: none;
+}
+.About{
+    font-size: 13px;
+    color: gray;
+    margin-left: 10px;
+    text-decoration: none;
+}
+.nav2{
+    margin-right: 110px;
+}
+.nlb{
+    padding: 5px;
+    background-color: white;
+    margin-right: 3px;
+    border: 1px solid black;
+    border-radius: 4px;
+}
+.nrb{
+    padding: 4.7px;
+    background-color: rgb(7, 0, 0);
+    margin-right: 3px;
+    border: 1px solid black;
+    border-radius: 4px;
+    color: white;
+
+}
+.login{
+    margin-top: 25px;
+    display: flex;
+    border: 1px solid rgb(218, 218, 218);
+    width: 740px;
+    margin-left: 245px;
+    height: 450px;
+    border-radius: 6px;
+}
+.login1{
+    background-image: url(/images/login.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    box-shadow: inset 70px 70px  450px;
+    width: 330px;
+    padding-left: 27px;
+    padding-top: 312px;
+    border-radius: 3px;
+}
+.l1{
+    color: white;
+    margin-top: 3px;
+    font-size: 10px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.l2{
+    color: white;
+    margin-top: 3px;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.login2{
+   margin-left: 65px;
+   margin-top: 80px; 
+}
+form > h3{
+    font-size: 25px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-bottom: 6px;
+}
+form > p{
+    margin-bottom: 25px;
+    font-size: 12px;
+    color: gray;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+}
+form > label{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 12px;
+    color: rgb(40, 40, 40);
+}
+form > input{
+    margin-top: 5px;
+    margin-bottom: 18px;
+    padding-right: 130px;
+    padding-top: 15px;
+    border: 1px solid rgb(223, 223, 223);
+    border-radius: 4px;
+}
+.rc{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.rem{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.rem input[type="checkbox"]{
+    width: auto;
+    height: auto;
+}
+span{
+    color: rgb(40, 40, 40);
+    font-size: 12px;
+}
+a{
+    margin-left: 95px;
+    font-size: 12px;
+    color: rgb(40, 40, 40);
+}
+.login_btn{
+    margin-top: 30px;
+    background-color: black;
+    color: white;
+    padding-right: 125px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-radius: 4px;
+    border: 1px solid black;
+    margin-left: 3px;
+    padding-left: 125px;
+
+}
