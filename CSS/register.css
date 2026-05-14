@@ -60,27 +60,32 @@ body{
     margin-top: 25px;
     display: flex;
     border: 1px solid rgb(218, 218, 218);
-    width: 740px;
-    margin-left: 245px;
-    height: 450px;
+    width: 770px;
+    margin-left: 215px;
+    height: 560px;
     border-radius: 6px;
+    margin-bottom: 50px;
 }
 .login1{
-    background-image: url(/images/login.png);
+    background-image: url(/images/reg.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     box-shadow: inset 70px 70px  450px;
-    width: 330px;
+    width: 360px;
     padding-left: 27px;
-    padding-top: 312px;
+    padding-top: 382px;
     border-radius: 3px;
 }
+
 .l1{
     color: white;
-    margin-top: 3px;
+    margin-top: 5px;
     font-size: 10px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.password{
+    margin-bottom: 8px;
 }
 .l2{
     color: white;
@@ -89,8 +94,8 @@ body{
     font-family: Arial, Helvetica, sans-serif;
 }
 .login2{
-   margin-left: 65px;
-   margin-top: 80px; 
+   margin-left: 55px;
+   margin-top: 35px; 
 }
 form > h3{
     font-size: 25px;
@@ -103,10 +108,17 @@ form > p{
     color: gray;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
 }
+
 form > label{
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-size: 12px;
     color: rgb(40, 40, 40);
+}
+.span1{
+    padding-bottom: 20px;
+    font-size: 12px;
+    color: gray;
+    margin-bottom: 10px;
 }
 form > input{
     margin-top: 5px;
@@ -130,8 +142,8 @@ form > input{
     width: auto;
     height: auto;
 }
-span{
-    color: rgb(40, 40, 40);
+.span2{
+    color: rgb(69, 69, 69);
     font-size: 12px;
 }
 a{
@@ -140,15 +152,26 @@ a{
     color: rgb(40, 40, 40);
 }
 .login_btn{
-    margin-top: 30px;
+    margin-top: 15px;
     background-color: black;
     color: white;
-    padding-right: 125px;
+    padding-right: 102px;
     padding-top: 5px;
     padding-bottom: 5px;
     border-radius: 4px;
     border: 1px solid black;
-    margin-left: 3px;
-    padding-left: 125px;
-
+    padding-left: 102px;
+    margin-bottom: 8px;
+}
+.l_link{
+    margin-left: 0px;
+    font-size: 12px;
+    color: rgb(40, 40, 40);
+}
+.span3{
+    margin-left: 90px;
+    padding-top: 20px;
+    font-size: 12px;
+    color: gray;
+    margin-top: 20px;
 }

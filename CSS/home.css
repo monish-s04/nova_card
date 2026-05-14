@@ -15,9 +15,11 @@ body{
 }
 .nav1{
     margin-left: 100px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
 }
 .NovaCart{
-    margin-right: 30px;
     text-decoration: none;
     color: black;
     font-size: 17px;
