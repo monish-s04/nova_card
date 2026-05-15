@@ -27,12 +27,15 @@ body{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 .Shop{
+    margin-left: 30px;
+    margin-top: 3.5px;
     font-size: 13px;
     color: gray;
     text-decoration: none;
 }
 .About{
     font-size: 13px;
+    margin-top: 3.5px;
     color: gray;
     margin-left: 10px;
     text-decoration: none;

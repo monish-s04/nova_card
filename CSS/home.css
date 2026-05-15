@@ -26,11 +26,14 @@ body{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 .Shop{
+    margin-top: 3.5px;
+    margin-left: 30px;
     font-size: 13px;
     color: gray;
     text-decoration: none;
 }
 .About{
+    margin-top: 3.5px;
     font-size: 13px;
     color: gray;
     margin-left: 10px;
