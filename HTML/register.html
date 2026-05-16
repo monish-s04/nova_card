@@ -16,8 +16,8 @@
             <a href="#" class="About">About</a>
         </div>
         <div class="nav2">
-            <button class="nlb">Login</button>
-            <button class="nrb">Register</button>
+            <button class="nlb" id="l">Login</button>
+            <button class="nrb" id="r">Register</button>
         </div>
     </nav>
     <section class="login">
@@ -27,30 +27,31 @@
             <p class="l1">This front-end demo users browser storage, suitable for <br>showcasing UI and JavaScript flow.</p>
         </div>
         <div class="login2">
-            <form method="get">
+            <form id="registerForm" method="get" onsubmit="reg">
                 <h3>Create account</h3>
                 <p>Use Strog password to register</p>
                 <label for="name">Full name</label><br>
-                <input type="text" class="name" name="name"><br>
+                <input type="text" id="name" class="name" name="name"><br>
                 <label for="email">Email address</label><br>
-                <input type="email" class="email" name="email"><br>
+                <input type="email" id="email" class="email" name="email"><br>
                 <label for="password">Password</label><br>
-                <input type="password" class="password" name="password"><br>
+                <input type="password" class="password" id="pass" name="password"><br>
                 <span class="span1">Minimum 8 characters with uppercase, lowercase, number, and symbol</span><br><br>
                 <label for="conpass">Comfirm password</label><br>
-                <input type="password" class="conpass" name="conpass"><br>
+                <input type="password" class="conpass" id="conpass" name="conpass"><br>
                 <div class="rc">
                     <div class="rem">
-                        <input type="checkbox" class="checkbox">
+                        <input type="checkbox" id="check" class="checkbox">
                         <span class="span2">I agree to the NovaCart account terms</span>
                     </div>
                 </div>
-                <button class="login_btn">Create account</button><br>
+                <button class="login_btn" type="submit">Create account</button><br>
                 <span class="span3">Already register?</span>
                 <a href="login.html" class="l_link">Login</a>
             </form>
         </div>
     </section>
+    <script src="../JS/register.js"></script>
 </body>
 
 </html>

@@ -114,8 +114,11 @@ form > label{
 form > input{
     margin-top: 5px;
     margin-bottom: 18px;
-    padding-right: 130px;
-    padding-top: 15px;
+    padding-left: 7px;
+    padding-right: 123px;
+    justify-content: center;
+    padding-top: 7.5px;
+    padding-bottom: 7.5px;
     border: 1px solid rgb(223, 223, 223);
     border-radius: 4px;
 }

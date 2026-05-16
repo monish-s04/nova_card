@@ -16,8 +16,8 @@
             <a href="#" class="About">About</a>
         </div>
         <div class="nav2">
-            <button class="nlb">Login</button>
-            <button class="nrb">Register</button>
+            <button class="nlb" id="l" >Login</button>
+            <button class="nrb" id="r">Register</button>
         </div>
     </nav>
     <section class="login">
@@ -27,24 +27,25 @@
             <p class="l1">Your demo account is stored locally in this browser for<br> portfolio and learning use.</p>
         </div>
         <div class="login2">
-            <form method="get">
+            <form id="loginForm" method="get" >
                 <h3>Login</h3>
                 <p>Enter your register email and password.</p>
                 <label for="email">Email address</label><br>
-                <input type="email" class="email" name="email"><br>
+                <input type="email" class="email" id="email" name="email"><br>
                 <label for="password">Password</label><br>
-                <input type="password" class="password" name="password"><br>
+                <input type="password" class="password" id="pass" name="password"><br>
                 <div class="rc">
                     <div class="rem">
-                        <input type="checkbox" class="checkbox">
+                        <input type="checkbox" class="checkbox" id="check">
                         <span>Remember me</span>
                     </div>
                     <a href="/HTML/register.html">Create account</a>
                 </div>
-                <button class="login_btn">Login</button>
+                <button class="login_btn" type="submit">Login</button>
             </form>
         </div>
     </section>
+    <script src="../JS/login.js"></script>
 </body>
 
 </html>
