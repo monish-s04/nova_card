@@ -76,6 +76,7 @@ body{
     transition-duration: 0.5s;
     transition-timing-function: ease-in-out;
 }
+
 .create:hover{
     transform: scale(1.1,1.1);
     transition-duration: 1s;

@@ -1,3 +1,12 @@
+let l = document.getElementById("l");
+let r = document.getElementById('r');
+l.addEventListener("click", () => {
+    window.location.href = "../HTML/login.html";
+})
+r.addEventListener("click", () => {
+    window.location.href = "../HTML/register.html";
+})
+
 let products = [];
 let filteredProducts = [];
 let cart = [];
