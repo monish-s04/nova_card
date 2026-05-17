@@ -33,12 +33,26 @@ body{
     color: gray;
     text-decoration: none;
 }
+.Shop:hover{
+    color: black;
+    text-decoration: underline;
+    transform: scale(1.1,1.1);
+    transition-duration: 0.5s;
+    transition-timing-function: ease-in-out;
+}
 .About{
     font-size: 13px;
     margin-top: 3.5px;
     color: gray;
     margin-left: 10px;
     text-decoration: none;
+}
+.About:hover{
+    color: black;
+    text-decoration: underline;
+    transform: scale(1.1,1.1);
+    transition-duration: 0.5s;
+    transition-timing-function: ease-in-out;
 }
 .nav2{
     margin-right: 110px;
@@ -49,6 +63,23 @@ body{
     margin-right: 3px;
     border: 1px solid black;
     border-radius: 4px;
+}
+.nlb:hover{
+    transform: scale(1.1,1.1);
+    box-shadow: 0px 4px 4px 0px gray;
+    transition-duration: 0.5s;
+    transition-timing-function: ease-in-out;
+}
+.nrb:hover{
+    transform: scale(1.1,1.1);
+    box-shadow: 0px 4px 4px 0px gray;
+    transition-duration: 0.5s;
+    transition-timing-function: ease-in-out;
+}
+.create:hover{
+    transform: scale(1.1,1.1);
+    transition-duration: 1s;
+    transition-timing-function: ease-in-out;
 }
 .nrb{
     padding: 4.7px;
@@ -136,6 +167,12 @@ form > input{
     width: auto;
     height: auto;
 }
+.checkbox:hover{
+    transform: scale(1.1,1.1);
+    transition-duration: 0.4s;
+    border: 2px solid black;
+    transition-timing-function: ease-in-out;
+}
 span{
     color: rgb(40, 40, 40);
     font-size: 12px;
@@ -157,4 +194,10 @@ a{
     margin-left: 3px;
     padding-left: 125px;
 
+}
+.login_btn:hover{
+    transform: scale(1.1,1.1);
+    box-shadow: 0px 4px 4px 0px gray;
+    transition-duration: 0.5s;
+    transition-timing-function: ease-in-out;
 }
