@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -17,20 +18,30 @@
             <a href="#" class="About">About</a>
         </div>
         <div class="nav2">
-            <button class="nsb"><i class="fa-solid fa-magnifying-glass"></i></button>
-            <select class="ns">
-                <option class="nso">All Categories</option>
+            <input type="text" id="searchInput" placeholder="Search product">
+
+            <button class="nsb" id="searchBtn">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+
+            <select class="ns" id="categoryFilter">
+                <option value="all">All Categories</option>
             </select>
+
             <button class="nlb">Login</button>
             <button class="nrb">Register</button>
-            <button class="ncb"><i class="fa-solid fa-bag-shopping"></i></button>
+            <button class="ncb">
+                <i class="fa-solid fa-bag-shopping"></i>
+            </button>
         </div>
     </nav>
     <section class="main">
         <div class="main1">
             <p class="m_p1">NEW COLLECTION</p>
             <P class="m_p2"><b>Shop reliable products for <br>everyday work and life.</b></P>
-            <p class="m_p3">Curated electronics, fashion, home goods and accessories with a fast local cart <br>experience. </p>
+            <p class="m_p3">Curated electronics, fashion, home goods and accessories with a fast local cart
+                <br>experience.
+            </p>
         </div>
         <div class="main2">
             <div class="m_div">
@@ -50,29 +61,39 @@
     <section class="product">
         <div class="product1">
             <h4>Products</h4>
-            <p>Showing 1-10 of 50<br>products</p>
+            <p id="productCount">Showing 1-10 of 50 products</p>
         </div>
+
         <div class="product2">
-            <select>
-                <option>Featured</option>
+            <select id="ratingFilter">
+                <option value="all">Featured</option>
+                <option value="4">Above 4 ⭐</option>
+                <option value="3">Above 3 ⭐</option>
+                <option value="2">Above 2 ⭐</option>
             </select>
         </div>
     </section>
-    <section class="item_grid">
-        <div class="ig">
-            <img src="" alt="img">
-            <div class="ig1">
-                <p>Electronics</p>
-                <p><i class="fa-solid fa-star"></i><span>4.6</span></p>
-            </div> 
-            <p><b>AeroTune Wireless Headphones</b></p>
-            <p>Noise-isolating over-ear headphones with<br>deep bass and 40 hour battery life</p>
-            <div class="ig2">
-                <h3>$89.99</h3>
-                <P><i class="fa-solid fa-briefcase-medical"></i><SPAN>Add</SPAN></P>
-            </div>
+    <section class="item_grid" id="productContainer"></section>
+    <div class="pagination">
+        <button id="prevBtn">Previous</button>
+        <span id="pageNumber">1</span>
+        <button id="nextBtn">Next</button>
+    </div>
+
+    <div class="cart-sidebar" id="cartSidebar">
+        <div class="cart-header">
+            <h3>Shopping Cart</h3>
+            <button id="closeCart">X</button>
         </div>
-    </section>
+
+        <div id="cartItems"></div>
+
+        <div class="cart-footer">
+            <h3>Total: $<span id="cartTotal">0</span></h3>
+            <button>Checkout</button>
+        </div>
+    </div>
+    <script src="/JS/home.js"></script>
 </body>
 
 </html>
