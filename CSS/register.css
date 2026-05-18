@@ -254,3 +254,152 @@ a {
     color: gray;
     margin-top: 20px;
 }
+
+/* ================= LAPTOP ================= */
+@media screen and (max-width: 1200px) {
+
+    .nav1 {
+        margin-left: 40px;
+    }
+
+    .nav2 {
+        margin-right: 40px;
+    }
+
+    .login {
+        width: 90%;
+        margin: 30px auto;
+    }
+}
+
+
+/* ================= TABLET ================= */
+@media screen and (max-width: 900px) {
+
+    .nav {
+        flex-direction: column;
+        height: auto;
+        padding: 15px;
+        gap: 10px;
+    }
+
+    .nav1 {
+        margin-left: 0;
+    }
+
+    .nav2 {
+        margin-right: 0;
+    }
+
+    .login {
+        flex-direction: column;
+        width: 90%;
+        height: auto;
+        margin: 30px auto;
+    }
+
+    .login1 {
+        width: 100%;
+        height: 260px;
+        padding-top: 170px;
+        border-radius: 6px 6px 0 0;
+    }
+
+    .login2 {
+        margin: 30px;
+    }
+
+    form > input {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .login_btn {
+        width: 100%;
+        padding: 12px;
+    }
+
+    a {
+        margin-left: 0;
+    }
+
+    .span3 {
+        margin-left: 0;
+        display: block;
+        text-align: center;
+    }
+}
+
+
+/* ================= MOBILE ================= */
+@media screen and (max-width: 600px) {
+
+    .nav {
+        padding: 10px;
+    }
+
+    .nav1 {
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    .Shop,
+    .About {
+        margin-left: 0;
+    }
+
+    .nav2 {
+        margin-top: 10px;
+    }
+
+    .login {
+        width: 95%;
+        margin: 20px auto;
+        border-radius: 8px;
+    }
+
+    .login1 {
+        height: 220px;
+        padding-left: 20px;
+        padding-top: 140px;
+    }
+
+    .l2 {
+        font-size: 16px;
+    }
+
+    .login2 {
+        margin: 20px;
+    }
+
+    form > h3 {
+        font-size: 22px;
+    }
+
+    form > input {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 15px;
+    }
+
+    .rc {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+
+    .login_btn {
+        width: 100%;
+        padding: 12px;
+        font-size: 14px;
+    }
+
+    .span3 {
+        margin-left: 0;
+        text-align: center;
+    }
+
+    a {
+        margin-left: 0;
+    }
+}

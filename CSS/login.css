@@ -1,12 +1,14 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-body{
+
+body {
     background-color: white;
 }
-.nav{
+
+.nav {
     background-color: white;
     height: 50px;
     display: flex;
@@ -14,75 +16,86 @@ body{
     align-items: center;
     border: 1px solid rgb(223, 223, 223);
 }
-.nav1{
+
+.nav1 {
     margin-left: 100px;
     display: flex;
     align-items: center;
     gap: 10px;
 }
-.NovaCart{
+
+.NovaCart {
     text-decoration: none;
     color: black;
     font-size: 17px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
-.Shop{
+
+.Shop {
     margin-left: 30px;
     margin-top: 3.5px;
     font-size: 13px;
     color: gray;
     text-decoration: none;
 }
-.Shop:hover{
+
+.Shop:hover {
     color: black;
     text-decoration: underline;
-    transform: scale(1.1,1.1);
+    transform: scale(1.1, 1.1);
     transition-duration: 0.5s;
     transition-timing-function: ease-in-out;
 }
-.About{
+
+.About {
     font-size: 13px;
     margin-top: 3.5px;
     color: gray;
     margin-left: 10px;
     text-decoration: none;
 }
-.About:hover{
+
+.About:hover {
     color: black;
     text-decoration: underline;
-    transform: scale(1.1,1.1);
+    transform: scale(1.1, 1.1);
     transition-duration: 0.5s;
     transition-timing-function: ease-in-out;
 }
-.nav2{
+
+.nav2 {
     margin-right: 110px;
 }
-.nlb{
+
+.nlb {
     padding: 5px;
     background-color: white;
     margin-right: 3px;
     border: 1px solid black;
     border-radius: 4px;
 }
-.nlb:hover{
-    transform: scale(1.1,1.1);
-    box-shadow: 0px 4px 4px 0px gray;
-    transition-duration: 0.5s;
-    transition-timing-function: ease-in-out;
-}
-.nrb:hover{
-    transform: scale(1.1,1.1);
+
+.nlb:hover {
+    transform: scale(1.1, 1.1);
     box-shadow: 0px 4px 4px 0px gray;
     transition-duration: 0.5s;
     transition-timing-function: ease-in-out;
 }
 
-.create:hover{
-    transform: scale(1.1,1.1);
+.nrb:hover {
+    transform: scale(1.1, 1.1);
+    box-shadow: 0px 4px 4px 0px gray;
+    transition-duration: 0.5s;
+    transition-timing-function: ease-in-out;
+}
+
+.create:hover {
+    transform: scale(1.1, 1.1);
     transition-duration: 1s;
     transition-timing-function: ease-in-out;
 }
-.nrb{
+
+.nrb {
     padding: 4.7px;
     background-color: rgb(7, 0, 0);
     margin-right: 3px;
@@ -91,7 +104,8 @@ body{
     color: white;
 
 }
-.login{
+
+.login {
     margin-top: 25px;
     display: flex;
     border: 1px solid rgb(218, 218, 218);
@@ -100,50 +114,58 @@ body{
     height: 450px;
     border-radius: 6px;
 }
-.login1{
+
+.login1 {
     background-image: url(/images/login.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    box-shadow: inset 70px 70px  450px;
+    box-shadow: inset 70px 70px 450px;
     width: 330px;
     padding-left: 27px;
     padding-top: 312px;
     border-radius: 3px;
 }
-.l1{
+
+.l1 {
     color: white;
     margin-top: 3px;
     font-size: 10px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
-.l2{
+
+.l2 {
     color: white;
     margin-top: 3px;
     font-size: 20px;
     font-family: Arial, Helvetica, sans-serif;
 }
-.login2{
-   margin-left: 65px;
-   margin-top: 80px; 
+
+.login2 {
+    margin-left: 65px;
+    margin-top: 80px;
 }
-form > h3{
+
+form>h3 {
     font-size: 25px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin-bottom: 6px;
 }
-form > p{
+
+form>p {
     margin-bottom: 25px;
     font-size: 12px;
     color: gray;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
 }
-form > label{
+
+form>label {
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-size: 12px;
     color: rgb(40, 40, 40);
 }
-form > input{
+
+form>input {
     margin-top: 5px;
     margin-bottom: 18px;
     padding-left: 7px;
@@ -154,36 +176,43 @@ form > input{
     border: 1px solid rgb(223, 223, 223);
     border-radius: 4px;
 }
-.rc{
+
+.rc {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-.rem{
+
+.rem {
     display: flex;
     align-items: center;
     gap: 10px;
 }
-.rem input[type="checkbox"]{
+
+.rem input[type="checkbox"] {
     width: auto;
     height: auto;
 }
-.checkbox:hover{
-    transform: scale(1.1,1.1);
+
+.checkbox:hover {
+    transform: scale(1.1, 1.1);
     transition-duration: 0.4s;
     border: 2px solid black;
     transition-timing-function: ease-in-out;
 }
-span{
+
+span {
     color: rgb(40, 40, 40);
     font-size: 12px;
 }
-a{
+
+a {
     margin-left: 95px;
     font-size: 12px;
     color: rgb(40, 40, 40);
 }
-.login_btn{
+
+.login_btn {
     margin-top: 30px;
     background-color: black;
     color: white;
@@ -196,9 +225,149 @@ a{
     padding-left: 125px;
 
 }
-.login_btn:hover{
-    transform: scale(1.1,1.1);
+
+.login_btn:hover {
+    transform: scale(1.1, 1.1);
     box-shadow: 0px 4px 4px 0px gray;
     transition-duration: 0.5s;
     transition-timing-function: ease-in-out;
+}
+
+/* ================= LAPTOP ================= */
+@media screen and (max-width: 1200px) {
+
+    .nav1 {
+        margin-left: 40px;
+    }
+
+    .nav2 {
+        margin-right: 40px;
+    }
+
+    .login {
+        width: 90%;
+        margin: 30px auto;
+    }
+}
+
+
+/* ================= TABLET ================= */
+@media screen and (max-width: 900px) {
+
+    .nav {
+        flex-direction: column;
+        height: auto;
+        padding: 15px;
+        gap: 10px;
+    }
+
+    .nav1 {
+        margin-left: 0;
+    }
+
+    .nav2 {
+        margin-right: 0;
+    }
+
+    .login {
+        flex-direction: column;
+        width: 90%;
+        height: auto;
+        margin: 30px auto;
+    }
+
+    .login1 {
+        width: 100%;
+        height: 250px;
+        padding-top: 170px;
+        border-radius: 6px 6px 0 0;
+    }
+
+    .login2 {
+        margin: 40px;
+    }
+
+    form input {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .login_btn {
+        width: 100%;
+        padding: 12px;
+        margin-left: 0;
+    }
+
+    a {
+        margin-left: 0;
+    }
+}
+
+
+/* ================= MOBILE ================= */
+@media screen and (max-width: 600px) {
+
+    .nav {
+        padding: 10px;
+    }
+
+    .nav1 {
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    .Shop,
+    .About {
+        margin-left: 0;
+    }
+
+    .nav2 {
+        margin-top: 10px;
+    }
+
+    .login {
+        width: 95%;
+        margin: 20px auto;
+        border-radius: 8px;
+    }
+
+    .login1 {
+        height: 200px;
+        padding-left: 20px;
+        padding-top: 130px;
+    }
+
+    .l2 {
+        font-size: 16px;
+    }
+
+    .login2 {
+        margin: 20px;
+    }
+
+    form>h3 {
+        font-size: 22px;
+    }
+
+    form>input {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 15px;
+    }
+
+    .rc {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+
+    .login_btn {
+        width: 100%;
+        padding: 12px;
+        font-size: 14px;
+    }
+
+    a {
+        margin-left: 0;
+    }
 }

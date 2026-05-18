@@ -218,3 +218,162 @@ body {
     transition-duration: 0.5s;
     transition-timing-function: ease-in-out;
 }
+
+
+/* ================= LAPTOP ================= */
+@media screen and (max-width: 1200px) {
+
+    .nav1 {
+        margin-left: 40px;
+    }
+
+    .nav2 {
+        margin-right: 40px;
+    }
+
+    .a_main1 {
+        margin-left: 80px;
+    }
+
+    .a_main2 {
+        margin-left: 50px;
+    }
+
+    .a_sub {
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    .a_sub1 {
+        margin-left: 0;
+    }
+
+    .a_footer {
+        width: 90%;
+        margin: 30px auto;
+    }
+}
+
+
+/* ================= TABLET ================= */
+@media screen and (max-width: 900px) {
+
+    .nav {
+        flex-direction: column;
+        height: auto;
+        padding: 15px;
+        gap: 10px;
+    }
+
+    .nav1 {
+        margin-left: 0;
+    }
+
+    .nav2 {
+        margin-right: 0;
+    }
+
+    .a_main {
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+        padding: 30px 20px;
+        text-align: center;
+    }
+
+    .a_main1,
+    .a_main2 {
+        margin: 0;
+    }
+
+    .a_main2 {
+        margin-top: 20px;
+    }
+
+    .a_sub {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+        margin-top: 20px;
+    }
+
+    .a_sub1 {
+        width: 280px;
+        margin: 0;
+    }
+
+    .a_footer {
+        flex-direction: column;
+        width: 90%;
+        height: auto;
+        margin: 30px auto;
+        padding: 20px;
+    }
+
+    .a_footer1 {
+        margin: 0;
+        text-align: center;
+    }
+
+    .a_footer2 {
+        margin: 20px 0 0 0;
+        justify-content: center;
+    }
+}
+
+
+/* ================= MOBILE ================= */
+@media screen and (max-width: 600px) {
+
+    .nav {
+        padding: 10px;
+    }
+
+    .nav1 {
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    .Shop,
+    .About {
+        margin-left: 0;
+    }
+
+    .nav2 {
+        margin-top: 10px;
+    }
+
+    .l2 {
+        font-size: 22px;
+    }
+
+    .a_img {
+        width: 100%;
+        max-width: 240px;
+        height: auto;
+    }
+
+    .a_sub {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .a_sub1 {
+        width: 90%;
+    }
+
+    .a_footer {
+        width: 95%;
+        padding: 15px;
+    }
+
+    .a_footer2 {
+        gap: 10px;
+    }
+
+    .a_footer2 > p {
+        font-size: 11px;
+        padding: 8px;
+    }
+}

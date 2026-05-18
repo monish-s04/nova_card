@@ -381,11 +381,14 @@ body {
 .pagination {
     text-align: center;
     margin: 30px;
+   
 }
 
 .pagination button {
-    padding: 10px 20px;
+    padding: 10px 10px;
     cursor: pointer;
+    font-size: 10px;
+    margin: 30px;
 }
 
 
@@ -417,4 +420,174 @@ body {
 
 .cart-footer {
     margin-top: 20px;
+}
+
+/* =======================
+   LARGE SCREEN (Laptop)
+======================= */
+@media screen and (max-width: 1200px) {
+
+    .nav1 {
+        margin-left: 40px;
+    }
+
+    .nav2 {
+        margin-right: 40px;
+    }
+
+    .main1 {
+        margin-left: 40px;
+    }
+
+    .main2 {
+        margin-left: 60px;
+        width: 350px;
+    }
+
+    .product {
+        margin-left: 40px;
+        gap: 20px;
+    }
+
+    .product2 {
+        width: 70%;
+    }
+
+    .product2 select {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .item_grid {
+        grid-template-columns: repeat(3, 1fr);
+        margin-left: 20px;
+    }
+}
+
+
+/* =======================
+   TABLET
+======================= */
+@media screen and (max-width: 900px) {
+
+    .nav {
+        flex-direction: column;
+        height: auto;
+        padding: 15px;
+        gap: 10px;
+    }
+
+    .nav1,
+    .nav2 {
+        margin: 0;
+    }
+
+    .main {
+        flex-direction: column;
+        height: auto;
+        padding: 30px 20px;
+        text-align: center;
+    }
+
+    .main1 {
+        margin: 0;
+    }
+
+    .main2 {
+        margin: 30px 0 0 0;
+        width: 100%;
+        max-width: 400px;
+    }
+
+    .product {
+        flex-direction: column;
+        align-items: flex-start;
+        margin: 30px 20px;
+        gap: 15px;
+    }
+
+    .product2 {
+        width: 100%;
+    }
+
+    .product2 select {
+        width: 100%;
+    }
+
+    .item_grid {
+        grid-template-columns: repeat(2, 1fr);
+        margin: 0;
+        padding: 20px;
+    }
+
+    .ig {
+        width: 100%;
+    }
+}
+
+
+/* =======================
+   MOBILE
+======================= */
+@media screen and (max-width: 600px) {
+
+    .nav {
+        padding: 10px;
+    }
+
+    .nav1 {
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    .Shop,
+    .About {
+        margin: 0;
+    }
+
+    .nav2 {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 8px;
+    }
+
+    .m_p2 {
+        font-size: 28px;
+    }
+
+    .main2 {
+        flex-direction: column;
+        gap: 15px;
+        padding: 15px;
+    }
+
+    .m_div:not(:last-child) {
+        border-right: none;
+        border-bottom: 1px solid rgba(255,255,255,0.2);
+        padding-bottom: 10px;
+    }
+
+    .product1 h4 {
+        font-size: 15px;
+    }
+
+    .product1 p {
+        font-size: 12px;
+    }
+
+    .item_grid {
+        grid-template-columns: 1fr;
+        padding: 15px;
+    }
+
+    .pagination button {
+        margin: 8px;
+        font-size: 12px;
+        padding: 8px 12px;
+    }
+
+    .cart-sidebar {
+        width: 100%;
+        right: -100%;
+    }
 }
