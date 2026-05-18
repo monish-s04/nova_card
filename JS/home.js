@@ -162,38 +162,106 @@ ratingFilter.addEventListener("change", () => {
 });
 
 
-// ADD TO CART
 function addToCart(id) {
-    let item = products.find(product => product.id === id);
+    let existingItem = cart.find(item => item.id === id);
 
-    cart.push(item);
+    if (existingItem) {
+        existingItem.quantity += 1;
+    } else {
+        let product = products.find(item => item.id === id);
+        cart.push({ ...product, quantity: 1 });
+    }
+
     updateCart();
-
     cartSidebar.style.right = "0";
 }
 
 
-// UPDATE CART
+function increaseQty(id) {
+    let item = cart.find(item => item.id === id);
+    item.quantity++;
+    updateCart();
+}
+
+
+function decreaseQty(id) {
+    let item = cart.find(item => item.id === id);
+
+    if (item.quantity > 1) {
+        item.quantity--;
+    } else {
+        removeItem(id);
+    }
+
+    updateCart();
+}
+
+
+function removeItem(id) {
+    cart = cart.filter(item => item.id !== id);
+    updateCart();
+}
+
+
+function clearCart() {
+    cart = [];
+    updateCart();
+}
+
+
 function updateCart() {
     cartItems.innerHTML = "";
 
-    let total = 0;
+    let subtotal = 0;
+    const shipping = 8.50;
 
     cart.forEach(item => {
-        total += item.price;
+        subtotal += item.price * item.quantity;
 
         cartItems.innerHTML += `
-            <div class="cart-item">
-                <img src="${item.image}" width="50">
-                <div>
-                    <p>${item.name}</p>
-                    <p>$${item.price}</p>
+        <div class="cart-item">
+            <img src="${item.image}" alt="${item.name}">
+
+            <div class="cart-info">
+                <h4>${item.name}</h4>
+                <p>$${item.price} each</p>
+
+                <div class="qty-controls">
+                    <button onclick="decreaseQty(${item.id})">-</button>
+                    <span>${item.quantity}</span>
+                    <button onclick="increaseQty(${item.id})">+</button>
                 </div>
             </div>
+
+            <div class="cart-right">
+                <button onclick="removeItem(${item.id})" class="delete-btn">🗑</button>
+                <h4>$${(item.price * item.quantity).toFixed(2)}</h4>
+            </div>
+        </div>
         `;
     });
 
-    cartTotal.textContent = total.toFixed(2);
+    let total = subtotal + shipping;
+
+    cartTotal.innerHTML = `
+        <div class="bill-row">
+            <p>Subtotal</p>
+            <span>$${subtotal.toFixed(2)}</span>
+        </div>
+
+        <div class="bill-row">
+            <p>Estimated shipping</p>
+            <span>$${shipping.toFixed(2)}</span>
+        </div>
+
+        <div class="bill-row total-row">
+            <h3>Total</h3>
+            <h3>$${total.toFixed(2)}</h3>
+        </div>
+
+        <button class="clear-btn" onclick="clearCart()">Clear cart</button>
+        <button class="checkout-btn">Checkout</button>
+    `;
 }
 
 

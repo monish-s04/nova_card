@@ -394,16 +394,17 @@ body {
 
 /* CART */
 .cart-sidebar {
-    width: 350px;
+    width: 380px;
     height: 100vh;
     background: white;
     position: fixed;
     top: 0;
     right: -400px;
     transition: 0.4s;
-    box-shadow: -5px 0 10px rgba(0, 0, 0, 0.2);
+    box-shadow: -5px 0 20px rgba(0,0,0,0.15);
     padding: 20px;
     overflow-y: auto;
+    z-index: 1000;
 }
 
 .cart-header {
@@ -412,14 +413,100 @@ body {
     align-items: center;
 }
 
-.cart-item {
-    display: flex;
-    gap: 10px;
-    margin: 20px 0;
+.cart-header h3 {
+    font-size: 20px;
+    font-weight: bold;
 }
 
-.cart-footer {
-    margin-top: 20px;
+.cart-item {
+    display: flex;
+    gap: 12px;
+    padding: 15px 0;
+    border-bottom: 1px solid #eee;
+}
+
+.cart-item img {
+    width: 65px;
+    height: 65px;
+    border-radius: 8px;
+    object-fit: cover;
+}
+
+.cart-info {
+    flex: 1;
+}
+
+.cart-info h4 {
+    font-size: 13px;
+    margin-bottom: 5px;
+}
+
+.cart-info p {
+    font-size: 10px;
+    color: gray;
+    margin-bottom: 8px;
+}
+
+.qty-controls {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+}
+
+.qty-controls button {
+    width: 28px;
+    height: 28px;
+    border: none;
+    background: #f3f4f6;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.cart-right {
+    text-align: right;
+}
+
+.delete-btn {
+    border: none;
+    background: none;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+.bill-row {
+    display: flex;
+    justify-content: space-between;
+    margin: 12px 0;
+    color: gray;
+}
+
+.total-row {
+    color: black;
+    font-weight: bold;
+    border-top: 1px solid #ddd;
+    padding-top: 15px;
+}
+
+.clear-btn {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid red;
+    color: red;
+    background: white;
+    border-radius: 8px;
+    margin-top: 15px;
+    cursor: pointer;
+}
+
+.checkout-btn {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    background: #111827;
+    color: white;
+    border-radius: 8px;
+    margin-top: 10px;
+    cursor: pointer;
 }
 
 /* =======================
