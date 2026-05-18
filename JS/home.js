@@ -260,7 +260,7 @@ function updateCart() {
         </div>
 
         <button class="clear-btn" onclick="clearCart()">Clear cart</button>
-        <button class="checkout-btn">Checkout</button>
+        <a href = "../HTML/home.html"><button class="checkout-btn">Checkout</button></a>
     `;
 }
 
